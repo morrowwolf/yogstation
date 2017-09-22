@@ -1072,13 +1072,12 @@ var/list/uplink_items = list() // Global list so we only initialize this once.
 	item = /obj/item/weapon/storage/box/cyber_implants/bundle
 	cost = 40
 
-
-
 // Role-specific items
 /datum/uplink_item/role_restricted
 	category = "Role-Restricted"
 	exclude_modes = list(/datum/game_mode/nuclear)
 	//restricted_roles = list("Assistant")
+
 
 /datum/uplink_item/role_restricted/rct
 	name = "Rapid Crate Teleporter"
@@ -1102,6 +1101,14 @@ var/list/uplink_items = list() // Global list so we only initialize this once.
 	item = /obj/item/weapon/melee/energy/sword/bikehorn
 	restricted_roles = list("Clown")
 	cost = 9
+
+/datum/uplink_item/role_restricted/clowncar
+	name = "Clown Car"
+	desc = "The finest vehicle in the Clown Planet selection. This baby can fit atleast 4932004 unfortunate victims and comes with a built in horn. Drive around in style \
+	as you run down innocent mobs of people as they run from this beautiful creation of The Honkmother."
+	item = /obj/vehicle/car/clown
+	cost = 12
+	restricted_roles = list("Clown")
 
 // Pointless
 /datum/uplink_item/badass
